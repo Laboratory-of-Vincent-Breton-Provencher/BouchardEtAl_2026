@@ -7,9 +7,7 @@ Created on Tue Nov 22 09:17:17 2022
 Figure 1B: region-specific dopamine dynamics (mPFC, BLA, NAc_lat, DS)
 aligned to reward delivery, with lick raster.
 
-LOAD DATA FROM
-'4 fibers all data/DA4fib02/20240117_naiverec/'
-(new fiber photometry setup)
+Download the data @ https://doi.org/10.17605/OSF.IO/DV724 
 """
 
 import os
