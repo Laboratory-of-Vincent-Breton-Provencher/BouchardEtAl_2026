@@ -181,7 +181,7 @@ def test_rmanova_by_loc(df, id_col="sess", loc_col="loc", dv_col="delta_punish",
     return dict(anova_table=a2, eta_p2=eta_p2, posthocs=post, emms=emms, levels=levels)
 
 
-# %% auROC computation helper (replaces two near-duplicate loops)
+# %% auROC computation helper
 
 def compute_auroc_results(df, ls_loc, comps, vs_baseline=False,
                            value_col='grab_reinf', cue_col='grab_cue'):
@@ -336,11 +336,6 @@ for j, trial_selector in enumerate(ls_trial):
             idx_trial_select = idx_trial_select.to_numpy()
 
             ras = raster_sub[idx_trial_select]
-            # TODO: this sort is currently never applied — len(idx_sort) can
-            # never be -1, so trial rows are shown in their original order.
-            # Fix the condition here if sorting by DS peak response was intended.
-            if len(idx_sort) == -1:
-                ras = ras[idx_sort]
 
             if len(ras) > 0:
                 a = ax[j, i]
