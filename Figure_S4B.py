@@ -22,7 +22,7 @@ Two figures come out of this:
   - Figure S4B: R2 score (5-fold CV) by region, the final section below.
 
 Requires `results_multisite_regression2.csv` (best_value_fixed) already
-computed by the non-cross-validated regression script. Figure_3B-H_S4ACDEFH.py
+computed by the non-cross-validated regression script: Figure_3B-H_S4ACDEFH.py
 
 Data can be downloaded here: https://doi.org/10.17605/OSF.IO/DV724
 """
