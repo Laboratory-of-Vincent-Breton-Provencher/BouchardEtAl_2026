@@ -213,9 +213,6 @@ results = pd.DataFrame(results)
 
 
 # %% Peak-normalize beta_motiv/beta_senso per session x region
-# NOTE: not currently plotted anywhere in this script (the peak-normalized
-# trace figure that would have used this is commented out below) — kept in
-# case you want to re-enable that plot.
 
 results['b_motiv_peak'] = 0.0
 results['b_senso_peak'] = 0.0
@@ -226,19 +223,6 @@ for sess in ls_sess:
         if idx_select.sum() > 0:
             results.loc[idx_select, 'b_motiv_peak'] = results.loc[idx_select, 'b_motiv'] / np.max(results.loc[idx_select, 'b_motiv'])
             results.loc[idx_select, 'b_senso_peak'] = results.loc[idx_select, 'b_senso'] / np.max(results.loc[idx_select, 'b_senso'])
-
-# fig, ax = plt.subplots(1, 4, figsize=(6, 2), sharex=True)
-# for i, loc in enumerate(ls_loc):
-#     sub = results[results['loc'] == loc]
-#     a = ax[i]
-#     sns.lineplot(sub, x='t', y='b_motiv_peak', ax=a, color='k', errorbar='se', label='b_motiv')
-#     sns.lineplot(sub, x='t', y='b_senso_peak', ax=a, color='crimson', errorbar='se', label='b_senso')
-#     a.set_title(loc)
-#     a.set_ylabel('Weights')
-#     a.set_xlim(0, 0.5)
-#     if i != 0:
-#         a.legend().remove()
-# fig.tight_layout()
 
 
 # %% Quick diagnostic: all regions overlaid (not a numbered figure panel)
@@ -273,9 +257,6 @@ fig.tight_layout()
 
 
 # %% Diagnostic: raw cross-correlation traces (supports Fig 3J below)
-# NOTE: the lag sign here depends on np.correlate's argument order and lag
-# convention — worth an independent sanity check with a synthetic pair of
-# curves at a known lag before trusting the sign in Fig 3J.
 
 results_lag = []
 fig, ax = plt.subplots(figsize=(2.5, 2.6))
