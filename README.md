@@ -67,6 +67,7 @@ Everything else can be run independently, in any order.
 | `Figure_S4B.py` | Fig S4B (k-fold cross-validation) |
 | `Figure_S4I.py` | Fig S4I |
 | `Figure_S5EFG.py` | Fig S5E, S5F, S5G |
+| `Figure_4.py` | Fig 4A, 4B, 4C, 4D, 4E, 4F |
 | `Figure_5_S6.py` | Fig 5A, 5B, 5C, 5D; Fig S6A, S6B |
 
 ## Figure output
