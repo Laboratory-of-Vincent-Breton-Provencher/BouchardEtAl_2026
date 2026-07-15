@@ -1,12 +1,6 @@
 # BouchardEtAl_2026
 
-Code to generate the figures in Bouchard et al. 2026, *Region-specific weighting of sensory intensity and reward prediction error by dopamine signals*.
-
-<!-- Add the final citation once available:
-Bouchard S-J, Boutin J, Lévesque M, Breton-Provencher V. Region-specific weighting of
-sensory intensity and reward prediction error by dopamine signals. Journal, Year.
-DOI: xxx
--->
+Code to generate the figures in Bouchard et al. 2026, *Region-specific weighting of sensory intensity and reward prediction error by dopamine signals*. iScience, 2026
 
 ## Overview
 
@@ -61,8 +55,8 @@ Everything else can be run independently, in any order.
 | Script | Figure panels |
 |---|---|
 | `Figure_1B.py` | Fig 1B |
-| `Figure_1FGH_2BCDE.py` | Fig 1F, 1G, 1H; Fig 2B*, 2C, 2D, 2E |
-| `Figure_2B_S2D.py` | Fig 2B*, S2D |
+| `Figure_1FGH_2BCDE.py` | Fig 1F, 1G, 1H; Fig 2B, 2C, 2D, 2E |
+| `Figure_2A_S2D.py` | Fig 2A, S2D |
 | `Figure_S2B.py` | Fig S2B |
 | `Figure_S2C_S5CD.py` | Fig S2C; Fig S5C, S5D |
 | `Figure_S2EF.py` | Fig S2E, S2F |
@@ -75,11 +69,6 @@ Everything else can be run independently, in any order.
 | `Figure_S5EFG.py` | Fig S5E, S5F, S5G |
 | `Figure_5_S6.py` | Fig 5A, 5B, 5C, 5D; Fig S6A, S6B |
 
-\* **Two scripts both currently label a panel "Figure 2B"** — `Figure_1FGH_2BCDE.py`
-(GRAB-DA amplitude vs. trial type, by region) and `Figure_2B_S2D.py` (anticipatory-licking
-trial-history effect). Only one of these should be Fig 2B in the final manuscript; this
-needs to be resolved and one of the two script names/comments updated accordingly.
-
 ## Figure output
 
 Scripts display figures via matplotlib; none currently save files automatically. Add
@@ -87,8 +76,8 @@ Scripts display figures via matplotlib; none currently save files automatically.
 
 ## Contact
 
-For questions about the code or data, contact [corresponding author email].
+For questions about the code or data, contact the VBP lab at vbplab.com .
 
 ## License
 
-<!-- Add a license, e.g. MIT, or state "All rights reserved" if none chosen yet -->
+All rights reserved
