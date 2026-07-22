@@ -2,6 +2,8 @@
 
 Code to generate the figures in Bouchard et al. 2026, *Region-specific weighting of sensory intensity and reward prediction error by dopamine signals*. iScience, 2026
 
+[![DOI](https://zenodo.org/badge/1229216205.svg)](https://doi.org/10.5281/zenodo.21498194)
+
 ## Overview
 
 Multi-site fiber photometry (GRAB-DA) recordings of dopamine release across the dorsal
